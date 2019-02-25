@@ -276,7 +276,7 @@ def put_filter_on(image, face, face_land, sticker_name, intersections):
                 sticker_path += "stickers/rainbow.png"
                 w_temp = int(w + w / 4)
                 y_temp = max(0, int(y1 - h / 8))
-                x_temp = max(int(min(x, x1) - w / 8), 0)
+                x_temp = max(int(min(x, x1) - w / 12), 0)
                 image, inter = adjust_sticker(image, sticker_path, ang, w_temp, y_temp, x_temp, face_land, face)
                 intersections.append(inter)
 
